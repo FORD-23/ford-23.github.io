@@ -1,1 +1,0 @@
-document.querySelectorAll('pre').forEach(p=>{const b=document.createElement('button');b.textContent='Копировать';b.onclick=()=>{navigator.clipboard.writeText(p.innerText.replace('Копировать','').trim());b.textContent='Скопировано'};p.appendChild(b)});

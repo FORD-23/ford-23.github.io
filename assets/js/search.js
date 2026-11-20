@@ -1,1 +1,0 @@
-const r=document.body.dataset.root,q=document.getElementById('q'),o=document.getElementById('res');let d=[];fetch(r+'search-index.json').then(x=>x.json()).then(j=>d=j).catch(()=>{});q.oninput=()=>{const s=q.value.toLowerCase();o.innerHTML=s.length<2?'':d.filter(p=>(p.t+p.x).toLowerCase().includes(s)).slice(0,8).map(p=>`<a href="${r+p.u}">${p.t}</a>`).join('')};
