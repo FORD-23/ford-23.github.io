@@ -6,11 +6,5 @@ body {
   background-color: #f4f7fb;
   color: #222;
 }
-
-a {
-  color: #1a5fb4;
-}
-
-nav {
-  margin-top: 24px;
-}
+a { color: #1a5fb4; }
+nav { margin-top: 24px; }
